@@ -18,8 +18,10 @@ Follow the colab training instructions will updates only with the deliverables.
 3.  Run through all the cells - no error encountered except it runs without GPU connect eventhough the runtime setting selected is GPU.
 6.  Adding layer Sigmoid function resulted to poor model performance. 
 7.  Special care for deep networks
+
     Replace all activation sigmoid function with RELU ( Rectified Linear Unit ), and optimizer = 'sgd' with optimizer = 'adam' 
     Result : 99% accuracy
+    
     
 8. Learning rate decay 
    a. Increase the learning rate default value of 0.001 to 0.01 with an actual instance of Adam optimizer
@@ -39,7 +41,7 @@ Follow the colab training instructions will updates only with the deliverables.
       Then re-train the model. Check the results, Did it work. No. The accuracy went down to 75% which is not good and the validation loss is not going up but 
       still higher more with no droput thechnique.
       
- 11. A convoultional network
+11. A convoultional network
    a. Reshape back the imsges flattened vector into 28x28x1 images(1 channel for grayscale images)
    b. Modify your model into a convolutional model. Remove the dropout. Flatten the curve into a vector so it can be consumed by dense layer.
    c. Please bump up the zoom in PlotTraining to 16. Then retrain the model and run the prediction. Check the results of retraining model.
