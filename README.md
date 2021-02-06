@@ -2,7 +2,7 @@
 Homework 1 - Deep Learning Class
 
 part 1 - Blackbox Deep Learning using Fast AI colab https://github.com/fastai/fastbook/blob/master/01_intro.ipynb
-Write Colab for illusting use of SOTA(state of the art) model architectures of fast ai using 
+Write Colab for illustrating use of SOTA(state of the art) model architectures of fast ai using 
 1. cnn_learner for image classification
 2. unet_learner for segmentation, 
 3. text_classifier_learner for sentiment analysis
