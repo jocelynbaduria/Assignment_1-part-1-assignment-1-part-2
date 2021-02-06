@@ -66,13 +66,14 @@ Follow the colab training instructions will updates only with the deliverables.
        
  13. #13 Batch Normalization 
  
-    a.  Modify each layer: remove the activation from the layer itself. Set use_bias=False
-        The scale factor can be turned off for Relu activation.  Use the syntax tf.keras.layers.BatchNormalization(scale=False, center=True),
-        Finish with the activation. Use the syntax tf.keras.layers.Activation('relu').
+     a.  Modify each layer: remove the activation from the layer itself. Set use_bias=False
+         The scale factor can be turned off for Relu activation. 
+         Use the syntax tf.keras.layers.BatchNormalization(scale=False, center=True),
+         Finish with the activation. Use the syntax tf.keras.layers.Activation('relu').
        
-    b.  Change dropout rate to 0.3, learning rate decay parameter to 0.666, and BATCH_SIZE=64. 
-        Retrain the model and check the result.
-        Result: Accuracy achieved only 99.35% and the validation loss converge perfectly(not going up).
+     b.  Change dropout rate to 0.3, learning rate decay parameter to 0.666, and BATCH_SIZE=64. 
+         Retrain the model and check the result.
+         Result: Accuracy achieved only 99.35% and the validation loss converge perfectly(not going up).
        
   14. #14 Train in the cloud on powerful hardware: AI Platform 
       
