@@ -56,8 +56,24 @@ Follow the colab training instructions will updates only with the deliverables.
     b.  Modify your model into a convolutional model. Remove the dropout. Flatten the curve into a vector so it can be consumed by dense layer.
    
     c.  Please bump up the zoom in PlotTraining to 16. Then retrain the model and run the prediction. Check the results of retraining model.
-       Result: Accuracy is more than 99% which is pretty amazing but the validation loss is still going up.
-       The prediction shows only 3 and 6/9 of 4th rows were classified wrong.
+       Result: Accuracy is more than 99% which is pretty amazing but the validation loss is still going up(overfitting.
+       The prediction shows only the 3rd and 6/9 of 4th rows were classified wrong and overfitting. 
+       
+ 12. #12 Dropout again
+    a. Add a dropout layer between the two dense layers in your network. Use a drop rate of 40% (0.4)
+       Retrain the model and check the result
+       Result: Accuracy is 99% and the validation loss is not going up. Overfitting was fixed by dropout regularization technique.
+       
+ 13. #13 Batch Normalization 
+    a. Modify each layer: remoe the activation from the layer itself. Set use_bias=False
+       The scale factor can be turned off for Relu activation.  Use the syntax tf.keras.layers.BatchNormalization(scale=False, center=True),
+       Finish with the activation. Use the syntax tf.keras.layers.Activation('relu').
+       
+    b. Change dropout rate to 0.3, learning rate decay parameter to 0.666, and BATCH_SIZE=64. 
+       Retrain the model and check the result.
+       Result: Accuracy achieved only 99.35% and the validation loss converge perfectly(not going up).
+       
+  14. #14 Train in the cloud on powerful hardware: AI Platform 
       
   
       
