@@ -65,6 +65,7 @@ Follow the colab training instructions will updates only with the deliverables.
        Result: Accuracy is 99% and the validation loss is not going up. Overfitting was fixed by dropout regularization technique.
        
  13. #13 Batch Normalization 
+ 
     a. Modify each layer: remoe the activation from the layer itself. Set use_bias=False
        The scale factor can be turned off for Relu activation.  Use the syntax tf.keras.layers.BatchNormalization(scale=False, center=True),
        Finish with the activation. Use the syntax tf.keras.layers.Activation('relu').
