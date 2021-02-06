@@ -19,11 +19,13 @@ Follow the colab training instructions will updates only with the deliverables.
 6.  Adding layer Sigmoid function resulted to poor model performance. 
 7.  Special care for deep networks
 
-    Replace all activation sigmoid function with RELU ( Rectified Linear Unit ), and optimizer = 'sgd' with optimizer = 'adam' 
+    Replace all activation sigmoid function with RELU ( Rectified Linear Unit ), and optimizer = 'sgd' with optimizer = 'adam'
+    
     Result : 99% accuracy
     
     
 8. Learning rate decay 
+
    a. Increase the learning rate default value of 0.001 to 0.01 with an actual instance of Adam optimizer
       optimizer=tf.keras.optimizers.Adam(lr=0.01)
    b. Change the zoom factor from 1 to 5. Retrain the model and check the result.
@@ -33,6 +35,7 @@ Follow the colab training instructions will updates only with the deliverables.
       Result: Accuracy is above 98% and noise in the data is gone.
    
 9. Dropout, overfitting
+
    a. Increase the depth of the model to at least 4 dense layers and retrain using the following number of neurons 200, 100, 60, 10.
    b. Bump the zoom factor to 10 in PlotTraining. Then retrain the model and check the result. Does it help? No
       Result: Accuracy is stuck to 98% and the validation loss goes up. It does not work on validation data and validation loss stops dropping and bounce up.
@@ -42,6 +45,7 @@ Follow the colab training instructions will updates only with the deliverables.
       still higher more with no droput thechnique.
       
 11. A convoultional network
+
    a. Reshape back the imsges flattened vector into 28x28x1 images(1 channel for grayscale images)
    b. Modify your model into a convolutional model. Remove the dropout. Flatten the curve into a vector so it can be consumed by dense layer.
    c. Please bump up the zoom in PlotTraining to 16. Then retrain the model and run the prediction. Check the results of retraining model.
