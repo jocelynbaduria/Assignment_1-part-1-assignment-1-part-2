@@ -24,7 +24,7 @@ Follow the colab training instructions will updates only with the deliverables.
     Result : 99% accuracy
     
     
-8. 8 Learning rate decay 
+8. #8 Learning rate decay 
 
    a. Increase the learning rate default value of 0.001 to 0.01 with an actual instance of Adam optimizer
       optimizer=tf.keras.optimizers.Adam(lr=0.01)
@@ -37,7 +37,7 @@ Follow the colab training instructions will updates only with the deliverables.
    d. Add the lr_decay_callback to model.fit callbacks[plot_training, lr_decay_callback]. Retrain the model and check the result.
       Result: Accuracy is above 98% and noise in the data is gone.
    
-9. 9 Dropout, overfitting
+9. #9 Dropout, overfitting
 
    a. Increase the depth of the model to at least 4 dense layers and retrain using the following number of neurons 200, 100, 60, 10.
    
@@ -49,7 +49,7 @@ Follow the colab training instructions will updates only with the deliverables.
       Then re-train the model. Check the results, Did it work. No. The accuracy went down to 75% which is not good and the validation loss is not going up but 
       still higher more with no droput thechnique.
       
-11. 11 A convoultional network
+11. #11 A convoultional network
 
     a.  Reshape back the imsges flattened vector into 28x28x1 images(1 channel for grayscale images)
    
