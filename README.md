@@ -13,18 +13,18 @@ Write Colab for illustrating use of SOTA(state of the art) model architectures o
 
 part 2 - Whitebox Deep Learning read and perform the codelab https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist#0
 
-Follow the colab training instructions will updates only with the deliverables.
+Follow the colab training instructions will updates only with the deliverables.Follow the 
 
-3.  Run through all the cells - no error encountered except it runs without GPU connect eventhough the runtime setting selected is GPU.
-6.  Adding layer Sigmoid function resulted to poor model performance. 
-7.  7 Special care for deep networks
+#3.  Run through all the cells - no error encountered except it runs without GPU connect eventhough the runtime setting selected is GPU.
+#6.  Adding layer Sigmoid function resulted to poor model performance. 
+#7.  Special care for deep networks
 
     Replace all activation sigmoid function with RELU ( Rectified Linear Unit ), and optimizer = 'sgd' with optimizer = 'adam'
     
     Result : 99% accuracy
     
     
-8. #8 Learning rate decay 
+#8 Learning rate decay 
 
    a. Increase the learning rate default value of 0.001 to 0.01 with an actual instance of Adam optimizer
       optimizer=tf.keras.optimizers.Adam(lr=0.01)
@@ -37,7 +37,7 @@ Follow the colab training instructions will updates only with the deliverables.
    d. Add the lr_decay_callback to model.fit callbacks[plot_training, lr_decay_callback]. Retrain the model and check the result.
       Result: Accuracy is above 98% and noise in the data is gone.
    
-9. #9 Dropout, overfitting
+#9 Dropout, overfitting
 
    a. Increase the depth of the model to at least 4 dense layers and retrain using the following number of neurons 200, 100, 60, 10.
    
@@ -49,7 +49,7 @@ Follow the colab training instructions will updates only with the deliverables.
       Then re-train the model. Check the results, Did it work. No. The accuracy went down to 75% which is not good and the validation loss is not going up but 
       still higher more with no droput thechnique.
       
-11. #11 A convoultional network
+#11. A convoultional network
 
     a.  Reshape back the imsges flattened vector into 28x28x1 images(1 channel for grayscale images)
    
@@ -59,12 +59,12 @@ Follow the colab training instructions will updates only with the deliverables.
        Result: Accuracy is more than 99% which is pretty amazing but the validation loss is still going up(overfitting.
        The prediction shows only the 3rd and 6/9 of 4th rows were classified wrong and overfitting. 
        
- 12. #12 Dropout again
+ #12.  Dropout again
     a. Add a dropout layer between the two dense layers in your network. Use a drop rate of 40% (0.4)
        Retrain the model and check the result
        Result: Accuracy is 99% and the validation loss is not going up. Overfitting was fixed by dropout regularization technique.
        
- 13. #13 Batch Normalization 
+ #13. Batch Normalization 
  
      a.  Modify each layer: remove the activation from the layer itself. Set use_bias=False
          The scale factor can be turned off for Relu activation. 
@@ -75,7 +75,17 @@ Follow the colab training instructions will updates only with the deliverables.
          Retrain the model and check the result.
          Result: Accuracy achieved only 99.35% and the validation loss converge perfectly(not going up).
        
-  14. #14 Train in the cloud on powerful hardware: AI Platform 
+  #14. Train in the cloud on powerful hardware: AI Platform using this tutorial.
+  
+       https://github.com/GoogleCloudPlatform/tensorflow-without-a-phd/tree/master/tensorflow-mnist-tutorial/mlengine
+      
+      a. Created a Google Cloud Account and enable billing.
+      
+      b. Install the GCP command line tools see GCP link: https://cloud.google.com/sdk/docs/install#interactive
+      
+      c. Created a Google Cloud Storage bucket storage ( put in us-central1 ), it will be used to stage the training code.
+      
+      d. Enabled the API GCP AI Platform see link https://cloud.google.com/ai-platform/
       
   
       
