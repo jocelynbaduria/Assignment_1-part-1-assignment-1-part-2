@@ -86,8 +86,11 @@ Follow the colab training instructions will updates only with the deliverables.F
    c. Created a Google Cloud Storage bucket storage ( put in us-central1 ), it will be used to stage the training code.
       
    d. Enabled the API GCP AI Platform see link https://cloud.google.com/ai-platform/
-         Result: Successfully submit the  it with the runtime Tensorflow version 1.15. The current Tensorflow version 2.4 did not working. 
-         See attached doucument for the complete documentation of this tutorial in the cloud. It is submitted in canvas due to PID privacy. 
+      
+   Result: Successfully submit the jobs with the runtime Tensorflow version 1.15. The current Tensorflow version 2.4 did not work. 
+   
+   See attached doucument for the complete documentation of this tutorial in the cloud. It is submitted in canvas due to PID privacy. 
+   
        
          
                    
