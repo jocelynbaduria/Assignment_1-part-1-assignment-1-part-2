@@ -19,9 +19,9 @@ Follow the colab training instructions will updates only with the deliverables.F
 #6.  Adding layer Sigmoid function resulted to poor model performance. 
 #7.  Special care for deep networks
 
-    Replace all activation sigmoid function with RELU ( Rectified Linear Unit ), and optimizer = 'sgd' with optimizer = 'adam'
+   Replace all activation sigmoid function with RELU ( Rectified Linear Unit ), and optimizer = 'sgd' with optimizer = 'adam'
     
-    Result : 99% accuracy
+   Result : 99% accuracy
     
     
 #8 Learning rate decay 
@@ -51,11 +51,11 @@ Follow the colab training instructions will updates only with the deliverables.F
       
 #11. A convoultional network
 
-    a.  Reshape back the imsges flattened vector into 28x28x1 images(1 channel for grayscale images)
+   a.  Reshape back the imsges flattened vector into 28x28x1 images(1 channel for grayscale images)
    
-    b.  Modify your model into a convolutional model. Remove the dropout. Flatten the curve into a vector so it can be consumed by dense layer.
+   b.  Modify your model into a convolutional model. Remove the dropout. Flatten the curve into a vector so it can be consumed by dense layer.
    
-    c.  Please bump up the zoom in PlotTraining to 16. Then retrain the model and run the prediction. Check the results of retraining model.
+   c.  Please bump up the zoom in PlotTraining to 16. Then retrain the model and run the prediction. Check the results of retraining model.
        Result: Accuracy is more than 99% which is pretty amazing but the validation loss is still going up(overfitting.
        The prediction shows only the 3rd and 6/9 of 4th rows were classified wrong and overfitting. 
        
@@ -66,27 +66,31 @@ Follow the colab training instructions will updates only with the deliverables.F
        
  #13. Batch Normalization 
  
-     a.  Modify each layer: remove the activation from the layer itself. Set use_bias=False
-         The scale factor can be turned off for Relu activation. 
-         Use the syntax tf.keras.layers.BatchNormalization(scale=False, center=True),
-         Finish with the activation. Use the syntax tf.keras.layers.Activation('relu').
+   a.  Modify each layer: remove the activation from the layer itself. Set use_bias=False
+       The scale factor can be turned off for Relu activation. 
+       Use the syntax tf.keras.layers.BatchNormalization(scale=False, center=True),
+       Finish with the activation. Use the syntax tf.keras.layers.Activation('relu').
        
-     b.  Change dropout rate to 0.3, learning rate decay parameter to 0.666, and BATCH_SIZE=64. 
-         Retrain the model and check the result.
-         Result: Accuracy achieved only 99.35% and the validation loss converge perfectly(not going up).
+   b.  Change dropout rate to 0.3, learning rate decay parameter to 0.666, and BATCH_SIZE=64. 
+        Retrain the model and check the result.
+        Result: Accuracy achieved only 99.35% and the validation loss converge perfectly(not going up).
        
   #14. Train in the cloud on powerful hardware: AI Platform using this tutorial.
   
-       https://github.com/GoogleCloudPlatform/tensorflow-without-a-phd/tree/master/tensorflow-mnist-tutorial/mlengine
+   https://github.com/GoogleCloudPlatform/tensorflow-without-a-phd/tree/master/tensorflow-mnist-tutorial/mlengine
       
-      a. Created a Google Cloud Account and enable billing.
+   a. Created a Google Cloud Account and enable billing.
       
-      b. Install the GCP command line tools see GCP link: https://cloud.google.com/sdk/docs/install#interactive
+   b. Install the GCP command line tools see GCP link: https://cloud.google.com/sdk/docs/install#interactive
       
-      c. Created a Google Cloud Storage bucket storage ( put in us-central1 ), it will be used to stage the training code.
+   c. Created a Google Cloud Storage bucket storage ( put in us-central1 ), it will be used to stage the training code.
       
-      d. Enabled the API GCP AI Platform see link https://cloud.google.com/ai-platform/
-      
+   d. Enabled the API GCP AI Platform see link https://cloud.google.com/ai-platform/
+         Result: Successfully submit the  it with the runtime Tensorflow version 1.15. The current Tensorflow version 2.4 did not working. 
+         See attached doucument for the complete documentation of this tutorial in the cloud. It is submitted in canvas due to PID privacy. 
+       
+         
+                   
   
       
       
