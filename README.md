@@ -89,7 +89,7 @@ Follow the colab training instructions will updates only with the deliverables.F
       
    Result: Successfully submit the jobs with the runtime Tensorflow version 1.15. The current Tensorflow version 2.4 did not work. 
    
-   See attached doucument for the complete documentation of this tutorial in the cloud. 
+   See attached document for the complete documentation of this tutorial in the cloud. 
    
    https://github.com/jocelynbaduria/Assignment_1-part-1-assignment-1-part-2/blob/main/Jocelyn_Baduria_Assignment_part2_Train%20in%20the%20Cloud.docx
    
