@@ -13,7 +13,7 @@ Write Colab for illustrating use of SOTA(state of the art) model architectures o
 
 part 2 - Whitebox Deep Learning read and perform the codelab https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist#0
 
-Follow the colab training instructions will updates only with the deliverables.Follow the 
+Follow the colab training instructions will updates only with the deliverables.Follow the instructions below:
 
 #3.  Run through all the cells - no error encountered except it runs without GPU connect eventhough the runtime setting selected is GPU.
 #6.  Adding layer Sigmoid function resulted to poor model performance. 
